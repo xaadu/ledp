@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	background-image: url('bg.jpg');
+	background-size: cover;
+	height: 100vh;
+	color: white;
+	font-family: 'Poiret One', cursive;
+	font-weight: 300;
+}
+.overlay {
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	
+	position: relative;
+}
+
+#navbar {
+	text-align: center;
+}
+
+#navbar #navbar-items {
+	list-style: none;
+}
+
+#navbar #navbar-items .navbar-item {
+	display: inline-block;
+}
+
+#navbar #navbar-items .navbar-item a {
+	display: inline-block;
+	padding: 14px 50px;
+	color: white;
+}
+
+#header .content {
+	position: absolute;
+	top: 37%;
+	left: 50%;
+	text-align: center;
+}
+#header .content div {
+	transform: translate(-50%, -50%);
+}
+#dp {
+	height: 160px;
+	width: 160px;
+	margin-bottom: -1em;
+}
+#dp img {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+#header .content .text .name {
+	font-size: 3em;
+}
+
+#header .content .text .name {
+	font-size: 3em;
+	padding: 0.4em;
+}
+
+
+#header .content .text .title {
+	font-size: 1em;
+	margin-bottom: -0.2em;
+}
+
+#header .content .buttons .btn {
+	color: white;
+	padding: 12px 30px;
+	margin: 0 10px;
+	background-color: #228b22;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
