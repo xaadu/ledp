@@ -2,23 +2,29 @@
 <html>
 	<head>
 		<title>Get Entertained</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	
 	<body>
 	
 		<!-- Header Section -->
-		<header>
+		<header id="header">
 			<!-- This division is for cenetering the element. -->
-			<div>
-				<h1>Welcome To Entertainment House</h1>
-				<a href="#">😝Entertain😝</a>
+			<div class="overlay">
+				<!-- This division is for cenetering the element. -->
+				<div class="content">
+					<div>
+						<h1>Welcome To Entertainment House</h1>
+						<a href="#" class="btn">😝Entertain😝</a>
+					</div>
+				</div>
 			</div>
 		</header>
 		
 		<!-- Main Section -->
-		<section class="main">
+		<section id="main">
 			<div class="code">
-					<h3>Here is a function to get Corona Information of <em>Bangladesh</em> from Worldometers: </h3>
+					<h3>A Python Function to get Corona Information of <em>Bangladesh</em> from Worldometers</h3>
 					<code><pre>
 import requests
 from bs4 import BeautifulSoup
@@ -53,34 +59,54 @@ print(getCovidText())
 			
 			<div class="audio">
 				<h3>Can you play the audio? 😝😝 Let's See 😝😝</h3>
-				<audio controls>
-				  <source src="music.mp3" type="audio/mpeg">
-				  Your browser does not support the audio tag.
-				</audio>
-				<img src="https://media1.tenor.com/images/c738957cc38961c5aee55fc636afa29c/tenor.gif?itemid=15131741" />
+				<div class="left">
+					<audio controls>
+					  <source src="music.mp3" type="audio/mpeg">
+					  Your browser does not support the audio tag.
+					</audio>
+				</div>
+				<div class="right">
+					<img src="https://media1.tenor.com/images/c738957cc38961c5aee55fc636afa29c/tenor.gif?itemid=15131741" />
+				</div>
 			</div>
 			
 			<hr />
 			
 			<div class="subscribe">
-				<h3>Subscribe Us for More Entertainment</h3>
-				<form action="#">
-					<input type="text" placeholder="Enter Your Email">
-				</form>
+				<div class="content">
+					<h3>Subscribe Us for More Entertainment</h3>
+					<form action="#">
+						<input type="text" placeholder="Enter Your Email" class="form_input">
+						<input type="submit" value="Subscribe" class="btn">
+					</form>
+				</div>
 			</div>
 			
 			<hr />
 			
 			<div class="map">
-				<button type="button" onclick="alert('😝😝😝😝😝😝😝😝😝😝')">WOOO! Click Me For a Surprise!</button>
+				<button type="button" onclick="alert('😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝😝')" class="btn">WOOO! Click Me For a Surprise!</button>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.4868866537813!2d90.4117844142965!3d23.73001099547337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b858f60f2b7b%3A0xe58debce85bf65e5!2sBangladesh%20Taekwondo%20Federation!5e0!3m2!1sen!2sbd!4v1600792134274!5m2!1sen!2sbd" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</div>
 			
 		</section>
 		
 		<!-- Footer Section -->
-		<footer>
-			<p>Crafted By: <a href="https://xaadu.github.io/">Zayed</a><br>All Rights Reserved &copy; 2020</p>
+		<footer id="footer">
+			<div class="overlay">
+				<div class="fleft">
+					Crafted By: <a href="https://xaadu.github.io/">Zayed</a>
+					<br>
+					All Rights Reserved &copy; 2020
+				</div>
+				<div class="fright">
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">LinkedIn</a></li>
+						<li><a href="#">Github</a></li>
+					</ul>
+				</div>
+			<div>
 		</footer>
 	
 	</body>
