@@ -1,7 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue-Bold.ttf");
+  font-weight: bold;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: unset;
+  color: #3d2514;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3d2514;
+}
+
+.row {
+  padding: 0 60px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header {
+  height: 100vh;
+  background: url("../images/bg_hero.png");
+}
+
+header .row .logo, header .row .main-nav {
+  display: inline-block;
+}
+
+header .row .logo {
+  padding: 30px 0;
+}
+
+header .row .main-nav {
+  margin-left: auto;
+  padding: 20px;
+  z-index: 9999;
+}
+
+header .row .main-nav .nav-top {
+  text-align: right;
+  padding: 12px;
+}
+
+header .row .main-nav .nav-top p {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  -webkit-transform: translateY(-50%) scale(0.9);
+          transform: translateY(-50%) scale(0.9);
+}
+
+header .row .main-nav .nav-top::after {
+  clear: both;
+}
+
+header .row .main-nav .navbar {
+  clear: both;
+}
+
+header .row .main-nav .navbar ul {
+  list-style: none;
+}
+
+header .row .main-nav .navbar ul li {
+  display: inline-block;
+  padding: 12px 0;
+}
+
+header .row .main-nav .navbar ul li a {
+  padding: 12px;
+  margin-left: 5px;
+  font-family: 'BebasNeue', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.26rem;
+}
+
+header .row .hero {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header .row .hero__left {
+  padding: 4% 0;
+}
+
+header .row .hero__left p {
+  font-family: 'BebasNeue', sans-serif;
+  border: 2px dashed #3d2514;
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 8px 12px;
+}
+
+header .row .hero__left h1, header .row .hero__left h2 {
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.8);
+}
+
+header .row .hero__left h1 {
+  font-size: 7rem;
+}
+
+header .row .hero__left h2 {
+  font-size: 4rem;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+header .row .hero__right {
+  position: relative;
+}
+
+header .row .hero__right img {
+  width: 94%;
+  margin-top: -23%;
+  margin-left: -5%;
+}
+
+header .row .hero__right .burger_price {
+  position: absolute;
+  bottom: 6%;
+  left: 2%;
+  background-color: #ff2929;
+  width: 140px;
+  height: 140px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+header .row .hero__right .burger_price .box {
+  border: 2px dashed white;
+  border-radius: 50%;
+  padding: 4%;
+}
+
+header .row .hero__right .burger_price .box p {
+  color: white;
+  font-family: 'BebasNeue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+header .row .hero__right .burger_price .box p.price {
+  font-size: 4rem;
+}
+
+header .row .hero__right .burger_price .box p.price span {
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+}
+
+header .row .hero__right .burger_price .box p.text {
+  font-size: 1.46rem;
+  letter-spacing: 0.8rem;
+  -webkit-transform: translate(6px, -12px);
+          transform: translate(6px, -12px);
 }
 /*# sourceMappingURL=style.css.map */
