@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	height: 50vh;
+	background: grey;
+}
+
+section {
+	max-width: 1140px;
+	height: 50vh;
+	margin: 50px auto;
+	border: 1px solid black;
+}
+
+.orange {
+	background: orange;
+}
+
+.green {
+	border: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.green div {
+	height: 100%;
+	background: green;
+	border: 1px solid black;
+	width: 40%;
+}
+
+
+.brown {
+	background: brown;
+}
+
+.royalblue {
+	height: 20vh;
+	background: royalblue;
+}
+
+footer {
+	height: 20vh;
+	background: grey;
+}
