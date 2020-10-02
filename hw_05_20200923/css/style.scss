@@ -41,16 +41,16 @@ a {
 }
 
 .row {
-    padding: 0 60px;
+    max-width: 1180px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     background: url('../images/bg_hero.png');
 
     .row {
@@ -69,6 +69,7 @@ header {
             .nav-top {
                 text-align: right;
                 padding: 12px;
+                padding-right: 0;
                 img {
                 }
                 p {
@@ -179,4 +180,35 @@ header {
         }
     }
 
+}
+
+
+#features {
+    .row {
+        .features_left,
+        .features_right_top,
+        .features_right_bottom {
+            position: relative;
+            flex: 1;
+
+            img {
+                width: 100%;
+            }
+            .text {
+                position: absolute;
+                top: 20px;
+                left: 30px;
+                width: calc(100% - 30px);
+            }
+        }
+        .features_right {
+            display: flex;
+            flex-direction: column;
+
+            &_bottom {
+                align-self: flex-end;
+            }
+        }
+
+    }
 }
