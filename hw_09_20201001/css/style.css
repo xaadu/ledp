@@ -60,6 +60,10 @@ header .searchForm form button {
   color: #894aa3;
 }
 
+header .row {
+  padding-bottom: 30px;
+}
+
 header .row .left-logo h1 {
   text-transform: uppercase;
   font-size: 1.7rem;
