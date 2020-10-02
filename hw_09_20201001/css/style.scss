@@ -1,13 +1,16 @@
 // V A R I A B L E S
 $color-primary: #894aa3;
+
 $color-bg-primary: #ebebea;
 $color-bg-secondary: #d0d0d0;
+$color-bg-ternary: #444444;
+$color-bg-quaternary: #e6e6e6;
 
 $color-text-primary: #666;
 $color-text-secondary: #999;
 $color-text-ternary: #333;
 
-$std_width: 1180px;
+$std_width: 1140px;
 
 
 * {
@@ -24,7 +27,7 @@ ul {
     list-style: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, input {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
 }
@@ -277,6 +280,95 @@ section {
                     font-size: 0.9rem;
                     line-height: 1.4rem;
                 }
+            }
+        }
+    }
+}
+
+footer {
+    .top {
+        background: white;
+        .container .row {
+            padding: 1.75rem 0;
+            .p {
+                width: 200px;
+                position: relative;
+
+                h4 {
+                    padding: 1.75rem 5px;
+                    color: $color-text-primary;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                }
+                h5 {
+                    padding: 5px;
+                    padding-top: 0;
+                    color: $color-text-secondary;
+                    font-size: 0.94rem;
+                    font-weight: 900;
+                }
+                h6 {
+                    padding: 0 5px 6px;
+                    color: $color-text-secondary;
+                    font-size: 0.7rem;
+                }
+                p {
+                    padding: 5px;
+                    padding-top: 0;
+                    font-size: 0.84rem;
+                    line-height: 1.54;
+                    color: $color-text-secondary;
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                ul {
+                    li {
+                        border-bottom: 1px solid $color-bg-primary;
+                        padding: 5px;
+                        padding-top: 0;
+                        margin-bottom: 0.84rem;
+
+                        a{
+                            color: $color-text-secondary;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+
+                form {
+                    input {
+                        padding: 10px 12px;
+                        border: none;
+                        border-radius: 8px;
+                        margin-bottom: 10px;
+                        background: $color-bg-quaternary;
+                    }
+                    input[type="text"], 
+                    input[type="email"] {
+                        width: 100%;
+                    }
+                    input[type="submit"] {
+                        padding: 8px 12px;
+                        color: $color-primary;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        background: $color-bg-ternary;
+
+        p {
+            color: $color-bg-secondary;
+            padding: 20px 5px;
+
+            a{
+                color: $color-bg-secondary;
+                font-weight: 900;
             }
         }
     }

@@ -13,7 +13,7 @@ ul {
   list-style: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, input {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
 }
@@ -27,7 +27,7 @@ p {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1140px;
   margin: auto;
   padding: 0 10px;
 }
@@ -210,8 +210,8 @@ section#slider .swiper-container .swiper-wrapper .swiper-slide .content p {
 }
 
 section#slider .swiper-container .swiper-pagination {
-  max-width: 1180px;
-  margin-left: calc(((100% - 1180px) / 2) + 10px);
+  max-width: 1140px;
+  margin-left: calc(((100% - 1140px) / 2) + 10px);
   text-align: left;
 }
 
@@ -287,5 +287,96 @@ section#blog .container .row .post h4 {
 section#blog .container .row .post p {
   font-size: 0.9rem;
   line-height: 1.4rem;
+}
+
+footer .top {
+  background: white;
+}
+
+footer .top .container .row {
+  padding: 1.75rem 0;
+}
+
+footer .top .container .row .p {
+  width: 200px;
+  position: relative;
+}
+
+footer .top .container .row .p h4 {
+  padding: 1.75rem 5px;
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+footer .top .container .row .p h5 {
+  padding: 5px;
+  padding-top: 0;
+  color: #999;
+  font-size: 0.94rem;
+  font-weight: 900;
+}
+
+footer .top .container .row .p h6 {
+  padding: 0 5px 6px;
+  color: #999;
+  font-size: 0.7rem;
+}
+
+footer .top .container .row .p p {
+  padding: 5px;
+  padding-top: 0;
+  font-size: 0.84rem;
+  line-height: 1.54;
+  color: #999;
+}
+
+footer .top .container .row .p p span {
+  font-size: 0.8rem;
+}
+
+footer .top .container .row .p ul li {
+  border-bottom: 1px solid #ebebea;
+  padding: 5px;
+  padding-top: 0;
+  margin-bottom: 0.84rem;
+}
+
+footer .top .container .row .p ul li a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+footer .top .container .row .p form input {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #e6e6e6;
+}
+
+footer .top .container .row .p form input[type="text"],
+footer .top .container .row .p form input[type="email"] {
+  width: 100%;
+}
+
+footer .top .container .row .p form input[type="submit"] {
+  padding: 8px 12px;
+  color: #894aa3;
+  font-weight: 900;
+}
+
+footer .bottom {
+  background: #444444;
+}
+
+footer .bottom p {
+  color: #d0d0d0;
+  padding: 20px 5px;
+}
+
+footer .bottom p a {
+  color: #d0d0d0;
+  font-weight: 900;
 }
 /*# sourceMappingURL=style.css.map */
