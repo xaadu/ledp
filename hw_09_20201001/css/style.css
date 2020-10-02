@@ -104,4 +104,25 @@ header .row .right-nav nav ul li a:hover {
 header .row .right-nav nav ul li:first-child a {
   color: black;
 }
+
+section#quote {
+  background: #ebebea;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#quote .container p {
+  color: #333;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 25px 140px;
+  line-height: 2.6rem;
+}
+
+section#quote .container p span {
+  display: inline-block;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
 /*# sourceMappingURL=style.css.map */
