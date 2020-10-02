@@ -28,6 +28,15 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
+body {
+  padding: 0 20px;
+  background: #d0d0d0;
+}
+
+header {
+  background: white;
+}
+
 header .bar {
   background-color: #894aa3;
   width: 100%;
@@ -111,8 +120,11 @@ header .row .right-nav nav ul li:first-child a {
   color: black;
 }
 
-section#quote {
+section {
   background: #ebebea;
+}
+
+section#quote {
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -208,11 +220,15 @@ section#slider .swiper-container .swiper-button-next {
   height: 60px;
 }
 
+section#people {
+  background: white;
+}
+
 section#people .container .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 60px;
+  padding: 60px 0;
 }
 
 section#people .container .row .p {
