@@ -26,15 +26,27 @@ ul {
 
 p, h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-primary;
+}
+
+p {
+    color: $color-text-primary;
 }
 
 
 .container {
     max-width: $std_width;
     margin: auto;
+    padding: 0 10px;
 }
 .row {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -96,7 +108,6 @@ header {
                 }
             }
             h4 {
-                font-weight: 100;
                 color: $color-text-secondary;
             }
         }
@@ -191,14 +202,13 @@ section {
                         color: white;
                         padding: 1rem;
                         padding-top: 0;
-                        font-weight: 100;
                         line-height: 1.8rem;
                     }
                 }
             }
             .swiper-pagination {
                 max-width: $std_width;
-                margin-left: calc((100% - #{$std_width}) / 2);
+                margin-left: calc(((100% - #{$std_width}) / 2) + 10px);
                 text-align: left;
                 .swiper-pagination-bullet {
                     padding: 6px;
@@ -226,28 +236,48 @@ section {
             padding: 60px 0;
             .p {
                 display: flex;
-                width: 30%;
+                width: 280px;
                 
                 .left-icon {
                     margin-right: 10px;
                 }
                 .right-content {
                     h3 {
-                        color: $color-primary;
                         font-size: 1.08rem;
                         font-weight: 400;
                         padding: 9px;
                         padding-left: 0;
                     }
                     p {
-                        color: $color-text-primary;
                         font-size: 0.9rem;
                         line-height: 1.4rem;
+                        padding-right: 9px;
                     }
                 }
             }
         }
     }
 
-    
+    &#blog {
+        .container .row {
+            padding: 50px 0;
+
+            .post {
+                width: 280px;
+                padding: 10px;
+                background: white;
+                text-align: center;
+
+                h4 {
+                    font-size: 1rem;
+                    padding: 15px 5px 18px;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    line-height: 1.4rem;
+                }
+            }
+        }
+    }
 }

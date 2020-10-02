@@ -15,17 +15,32 @@ ul {
 
 p, h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #894aa3;
+}
+
+p {
+  color: #666;
 }
 
 .container {
   max-width: 1180px;
   margin: auto;
+  padding: 0 10px;
 }
 
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body {
@@ -91,7 +106,6 @@ header .row .left-logo h1 span {
 }
 
 header .row .left-logo h4 {
-  font-weight: 100;
   color: #999;
 }
 
@@ -192,13 +206,12 @@ section#slider .swiper-container .swiper-wrapper .swiper-slide .content p {
   color: white;
   padding: 1rem;
   padding-top: 0;
-  font-weight: 100;
   line-height: 1.8rem;
 }
 
 section#slider .swiper-container .swiper-pagination {
   max-width: 1180px;
-  margin-left: calc((100% - 1180px) / 2);
+  margin-left: calc(((100% - 1180px) / 2) + 10px);
   text-align: left;
 }
 
@@ -235,7 +248,7 @@ section#people .container .row .p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  width: 280px;
 }
 
 section#people .container .row .p .left-icon {
@@ -243,7 +256,6 @@ section#people .container .row .p .left-icon {
 }
 
 section#people .container .row .p .right-content h3 {
-  color: #894aa3;
   font-size: 1.08rem;
   font-weight: 400;
   padding: 9px;
@@ -251,7 +263,28 @@ section#people .container .row .p .right-content h3 {
 }
 
 section#people .container .row .p .right-content p {
-  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  padding-right: 9px;
+}
+
+section#blog .container .row {
+  padding: 50px 0;
+}
+
+section#blog .container .row .post {
+  width: 280px;
+  padding: 10px;
+  background: white;
+  text-align: center;
+}
+
+section#blog .container .row .post h4 {
+  font-size: 1rem;
+  padding: 15px 5px 18px;
+}
+
+section#blog .container .row .post p {
   font-size: 0.9rem;
   line-height: 1.4rem;
 }
