@@ -9,7 +9,95 @@ a {
   text-decoration: none;
 }
 
-li {
+ul {
   list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .bar {
+  background-color: #894aa3;
+  width: 100%;
+  height: 10px;
+}
+
+header .searchForm form {
+  text-align: right;
+  position: relative;
+}
+
+header .searchForm form input {
+  background-color: #ebebea;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  width: 260px;
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+header .searchForm form button {
+  position: absolute;
+  top: 3px;
+  right: 6px;
+  border-radius: 50%;
+  padding: 2px 3px;
+  border: none;
+  background: white;
+  color: #894aa3;
+}
+
+header .row .left-logo h1 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #666;
+}
+
+header .row .left-logo h1 span {
+  font-size: 2.3rem;
+}
+
+header .row .left-logo h4 {
+  font-weight: 100;
+  color: #999;
+}
+
+header .row .right-nav {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+header .row .right-nav nav ul li {
+  display: inline-block;
+  text-align: right;
+  padding-left: 30px;
+}
+
+header .row .right-nav nav ul li a {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+header .row .right-nav nav ul li a:hover {
+  color: black;
+}
+
+header .row .right-nav nav ul li:first-child a {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
