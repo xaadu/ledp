@@ -211,4 +211,33 @@ section {
             }
         }
     }
+
+    &#people {
+        .container .row {
+            justify-content: space-between;
+            padding: 60px;
+            .p {
+                display: flex;
+                width: 30%;
+                
+                .left-icon {
+                    margin-right: 10px;
+                }
+                .right-content {
+                    h3 {
+                        color: $color-primary;
+                        font-size: 1.08rem;
+                        font-weight: 400;
+                        padding: 9px;
+                        padding-left: 0;
+                    }
+                    p {
+                        color: $color-text-primary;
+                        font-size: 0.9rem;
+                        line-height: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
 }

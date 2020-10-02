@@ -207,4 +207,36 @@ section#slider .swiper-container .swiper-button-next {
   width: 60px;
   height: 60px;
 }
+
+section#people .container .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px;
+}
+
+section#people .container .row .p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+}
+
+section#people .container .row .p .left-icon {
+  margin-right: 10px;
+}
+
+section#people .container .row .p .right-content h3 {
+  color: #894aa3;
+  font-size: 1.08rem;
+  font-weight: 400;
+  padding: 9px;
+  padding-left: 0;
+}
+
+section#people .container .row .p .right-content p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
 /*# sourceMappingURL=style.css.map */
