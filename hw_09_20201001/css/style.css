@@ -198,4 +198,13 @@ section#slider .swiper-container .swiper-pagination .swiper-pagination-bullet {
 section#slider .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
   background: #894aa3;
 }
+
+section#slider .swiper-container .swiper-button-prev,
+section#slider .swiper-container .swiper-button-next {
+  color: #894aa3;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
 /*# sourceMappingURL=style.css.map */
