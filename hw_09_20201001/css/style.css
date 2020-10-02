@@ -60,6 +60,12 @@ header .searchForm form button {
   color: #894aa3;
 }
 
+header .searchForm form input:focus,
+header .searchForm form button:focus {
+  border: none;
+  outline: none;
+}
+
 header .row {
   padding-bottom: 30px;
 }

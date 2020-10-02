@@ -67,9 +67,15 @@ header {
                 background: white;
                 color: $color-primary;
             }
+            input:focus, 
+            button:focus {
+                border: none;
+                outline: none;
+            }
         }
     }
     .row {
+        padding-bottom: 30px;
         .left-logo{
             h1 {
                 text-transform: uppercase;
@@ -110,7 +116,6 @@ header {
                 }
             }
         }
-        padding-bottom: 30px;
     }
 }
 
