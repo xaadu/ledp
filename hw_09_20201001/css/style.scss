@@ -243,6 +243,12 @@ section {
                 max-width: $std_width;
                 margin-left: calc(((100% - #{$std_width}) / 2) + 10px);
                 text-align: left;
+                @media only screen and (max-width: 960px) {
+                    margin-left: 5%;
+                }
+                @media only screen and (max-width: 680px) {
+                    display: none;
+                }
                 .swiper-pagination-bullet {
                     padding: 6px;
                     border: 2px solid $color-primary;
