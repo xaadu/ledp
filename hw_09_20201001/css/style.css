@@ -43,6 +43,26 @@ p {
       flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 1200px) {
+  .row {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 body {
   padding: 0 20px;
   background: #d0d0d0;
@@ -94,6 +114,12 @@ header .row {
   padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 960px) {
+  header .row .left-logo {
+    padding: 30px;
+  }
+}
+
 header .row .left-logo h1 {
   text-transform: uppercase;
   font-size: 1.7rem;
@@ -114,10 +140,23 @@ header .row .right-nav {
   margin-top: auto;
 }
 
+@media only screen and (max-width: 960px) {
+  header .row .right-nav {
+    margin: auto;
+  }
+}
+
 header .row .right-nav nav ul li {
   display: inline-block;
   text-align: right;
   padding-left: 30px;
+}
+
+@media only screen and (max-width: 680px) {
+  header .row .right-nav nav ul li {
+    text-align: center;
+    padding: 20px 30px;
+  }
 }
 
 header .row .right-nav nav ul li a {
@@ -150,6 +189,13 @@ section#quote .container p {
   font-style: italic;
   padding: 25px 140px;
   line-height: 2.6rem;
+}
+
+@media only screen and (max-width: 680px) {
+  section#quote .container p {
+    text-align: center;
+    padding: 25px 40px;
+  }
 }
 
 section#quote .container p span {
@@ -238,9 +284,6 @@ section#people {
 }
 
 section#people .container .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 60px 0;
 }
 
@@ -249,6 +292,22 @@ section#people .container .row .p {
   display: -ms-flexbox;
   display: flex;
   width: 280px;
+}
+
+@media only screen and (max-width: 960px) {
+  section#people .container .row .p {
+    margin-top: 60px;
+    width: 60%;
+  }
+  section#people .container .row .p:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  section#people .container .row .p {
+    width: 80%;
+  }
 }
 
 section#people .container .row .p .left-icon {
@@ -279,6 +338,22 @@ section#blog .container .row .post {
   text-align: center;
 }
 
+@media only screen and (max-width: 960px) {
+  section#blog .container .row .post {
+    margin-top: 60px;
+    width: 60%;
+  }
+  section#blog .container .row .post:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  section#blog .container .row .post {
+    width: 80%;
+  }
+}
+
 section#blog .container .row .post h4 {
   font-size: 1rem;
   padding: 15px 5px 18px;
@@ -297,9 +372,45 @@ footer .top .container .row {
   padding: 1.75rem 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  footer .top .container .row {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  footer .top .container .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 footer .top .container .row .p {
   width: 200px;
   position: relative;
+}
+
+@media only screen and (max-width: 960px) {
+  footer .top .container .row .p {
+    width: 40%;
+    margin-top: 1.75rem;
+  }
+  footer .top .container .row .p:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  footer .top .container .row .p {
+    width: 80%;
+  }
 }
 
 footer .top .container .row .p h4 {

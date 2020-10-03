@@ -50,6 +50,14 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: 1200px) {
+        justify-content: space-evenly;
+    }
+    @media only screen and (max-width: 960px) {
+       flex-direction: column;
+       align-items: center;
+    }
 }
 
 
@@ -101,6 +109,9 @@ header {
     .row {
         padding-bottom: 30px;
         .left-logo{
+            @media only screen and (max-width: 960px) {
+                padding: 30px;
+            }
             h1 {
                 text-transform: uppercase;
                 font-size: 1.7rem;
@@ -117,15 +128,22 @@ header {
         .right-nav{
             margin-left: auto;
             margin-top: auto;
+            @media only screen and (max-width: 960px) {
+                margin: auto;
+            }
             nav {
                 ul {
                     li {
                         display: inline-block;
                         text-align: right;
                         padding-left: 30px;
+                        @media only screen and (max-width: 680px) {
+                            text-align: center;
+                            padding: 20px 30px;
+                        }
                         a {
                             text-transform: uppercase;
-                            font-size: 0.9rem;
+                            font-size: 0.9rem; 
                             color: $color-text-primary;
 
                             &:hover {
@@ -155,6 +173,10 @@ section {
             font-style: italic;
             padding: 25px 140px;
             line-height: 2.6rem;
+            @media only screen and (max-width: 680px) {
+                text-align: center;
+                padding: 25px 40px;
+            }
 
             span {
                 display: inline-block;
@@ -235,11 +257,20 @@ section {
     &#people {
         background: white;
         .container .row {
-            justify-content: space-between;
             padding: 60px 0;
             .p {
                 display: flex;
                 width: 280px;
+                @media only screen and (max-width: 960px) {
+                    margin-top: 60px;
+                    width: 60%;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+                @media only screen and (max-width: 680px) {
+                    width: 80%;
+                }
                 
                 .left-icon {
                     margin-right: 10px;
@@ -270,6 +301,16 @@ section {
                 padding: 10px;
                 background: white;
                 text-align: center;
+                @media only screen and (max-width: 960px) {
+                    margin-top: 60px;
+                    width: 60%;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+                @media only screen and (max-width: 680px) {
+                    width: 80%;
+                }
 
                 h4 {
                     font-size: 1rem;
@@ -290,15 +331,38 @@ footer {
         background: white;
         .container .row {
             padding: 1.75rem 0;
+            @media only screen and (max-width: 1200px) {
+                justify-content: space-evenly;
+            }
+            @media only screen and (max-width: 960px) {
+               flex-direction: row;
+               align-items: center;
+            }
             .p {
                 width: 200px;
                 position: relative;
+
+                @media only screen and (max-width: 960px) {
+                    width: 40%;
+                    margin-top: 1.75rem;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+                @media only screen and (max-width: 680px) {
+                    width: 80%;
+                }
 
                 h4 {
                     padding: 1.75rem 5px;
                     color: $color-text-primary;
                     font-size: 0.9rem;
                     text-transform: uppercase;
+
+                    @media only screen and (max-width: 680px) {
+                        //text-align: center;
+                    }
                 }
                 h5 {
                     padding: 5px;
