@@ -120,6 +120,9 @@ header {
                 span {
                     font-size: 2.3rem;
                 }
+                @media only screen and (max-width: 380px) {
+                    font-size: 1.2rem;
+                }
             }
             h4 {
                 color: $color-text-secondary;
@@ -174,7 +177,6 @@ section {
             padding: 25px 140px;
             line-height: 2.6rem;
             @media only screen and (max-width: 680px) {
-                text-align: center;
                 padding: 25px 40px;
             }
 
@@ -191,6 +193,9 @@ section {
         .swiper-container {
             height: 380px;
             position: relative;
+            @media only screen and (max-width: 480px) {
+                height: 300px;
+            }
 
             .swiper-wrapper .swiper-slide {
                 background-size: cover;
@@ -218,6 +223,9 @@ section {
                     position: absolute;
                     right: 0;
                     bottom: 0;
+                    @media only screen and (max-width: 480px) {
+                        width: 100%;
+                    }
                     h2 {
                         color: white;
                         padding: 1rem;
@@ -281,11 +289,17 @@ section {
                         font-weight: 400;
                         padding: 9px;
                         padding-left: 0;
+                        @media only screen and (max-width: 680px) {
+                            font-size: 1.3rem;
+                        }
                     }
                     p {
                         font-size: 0.9rem;
                         line-height: 1.4rem;
                         padding-right: 9px;
+                        @media only screen and (max-width: 680px) {
+                            font-size: 1.1rem;
+                        }
                     }
                 }
             }
@@ -312,14 +326,35 @@ section {
                     width: 80%;
                 }
 
+                .top {
+                    width: 260px;
+                    height: 180px;
+                    margin: auto;
+
+                    @media only screen and (max-width: 430px) {
+                        width: 100%;
+                        padding: 0 10px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
                 h4 {
                     font-size: 1rem;
                     padding: 15px 5px 18px;
+                    @media only screen and (max-width: 680px) {
+                        font-size: 1.2rem;
+                    }
                 }
 
                 p {
                     font-size: 0.9rem;
                     line-height: 1.4rem;
+                    @media only screen and (max-width: 680px) {
+                        font-size: 1rem;
+                    }
                 }
             }
         }

@@ -131,6 +131,12 @@ header .row .left-logo h1 span {
   font-size: 2.3rem;
 }
 
+@media only screen and (max-width: 380px) {
+  header .row .left-logo h1 {
+    font-size: 1.2rem;
+  }
+}
+
 header .row .left-logo h4 {
   color: #999;
 }
@@ -193,7 +199,6 @@ section#quote .container p {
 
 @media only screen and (max-width: 680px) {
   section#quote .container p {
-    text-align: center;
     padding: 25px 40px;
   }
 }
@@ -207,6 +212,12 @@ section#quote .container p span {
 section#slider .swiper-container {
   height: 380px;
   position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  section#slider .swiper-container {
+    height: 300px;
+  }
 }
 
 section#slider .swiper-container .swiper-wrapper .swiper-slide {
@@ -240,6 +251,12 @@ section#slider .swiper-container .swiper-wrapper .swiper-slide .content {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  section#slider .swiper-container .swiper-wrapper .swiper-slide .content {
+    width: 100%;
+  }
 }
 
 section#slider .swiper-container .swiper-wrapper .swiper-slide .content h2 {
@@ -321,10 +338,22 @@ section#people .container .row .p .right-content h3 {
   padding-left: 0;
 }
 
+@media only screen and (max-width: 680px) {
+  section#people .container .row .p .right-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
 section#people .container .row .p .right-content p {
   font-size: 0.9rem;
   line-height: 1.4rem;
   padding-right: 9px;
+}
+
+@media only screen and (max-width: 680px) {
+  section#people .container .row .p .right-content p {
+    font-size: 1.1rem;
+  }
 }
 
 section#blog .container .row {
@@ -354,14 +383,43 @@ section#blog .container .row .post {
   }
 }
 
+section#blog .container .row .post .top {
+  width: 260px;
+  height: 180px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 430px) {
+  section#blog .container .row .post .top {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+section#blog .container .row .post .top img {
+  width: 100%;
+}
+
 section#blog .container .row .post h4 {
   font-size: 1rem;
   padding: 15px 5px 18px;
 }
 
+@media only screen and (max-width: 680px) {
+  section#blog .container .row .post h4 {
+    font-size: 1.2rem;
+  }
+}
+
 section#blog .container .row .post p {
   font-size: 0.9rem;
   line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 680px) {
+  section#blog .container .row .post p {
+    font-size: 1rem;
+  }
 }
 
 footer .top {
