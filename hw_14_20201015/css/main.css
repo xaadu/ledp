@@ -59,16 +59,35 @@ header .carousel .carousel-inner p {
   font-size: 0.98rem;
 }
 
-section#story h2 {
+section#story_text h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--color-text-primary);
 }
 
-section#story p {
+section#story_text p {
   font-size: 0.9rem;
   color: var(--color-text-primary);
+}
+
+section#story_video {
+  background: var(--gradient-overlay-one-ltr), url("../images/bg_video.jpg");
+  background-size: cover;
+}
+
+section#story_video .container {
+  height: 450px;
+}
+
+section#story_video .container a img {
+  height: 156px;
+  width: 156px;
+}
+
+section#story_video .container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.94rem;
 }
 
 .bg-black {

@@ -70,7 +70,7 @@ header {
 
 
 section {
-    &#story {
+    &#story_text {
         h2 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
@@ -83,8 +83,22 @@ section {
         }
     }
 
-    &#video {
-        
+    &#story_video {
+        background: var(--gradient-overlay-one-ltr), url('../images/bg_video.jpg');
+        background-size: cover;
+
+        .container {
+            height: 450px;
+
+            a img {
+                    height: 156px;
+                    width: 156px;
+            }
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.94rem;
+            }
+        }
     }
 }
 
