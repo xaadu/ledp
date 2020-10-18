@@ -5,6 +5,10 @@
     --color-primary: #00e0d0;
     --color-overlay-one: #09052f;
     --color-overlay-two: #311d5e;
+
+    --color-text-primary: #413d4b;
+    --color-text-secondary: #2f2d35;
+    --color-text-tertiary: #333333;
     
     --gradient-overlay-one-ltr: linear-gradient(to right, rgba(9, 5, 47, 0.8), rgba(49, 29, 94, 0.8));
 }
@@ -48,6 +52,7 @@ header {
         }
         .carousel-inner {
             background: var(--gradient-overlay-one-ltr), url('../images/bg_main.jpg');
+            background-size: cover;
 
             h1 {
                 font-family: 'Playfair Display', serif;
@@ -62,6 +67,22 @@ header {
         }
     }
 }
+
+
+.story {
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: var(--color-text-primary);
+    }
+    p {
+        font-size: 0.9rem;
+        color: var(--color-text-primary);
+    }
+}
+
 
 
 .bg-black {
@@ -87,7 +108,7 @@ header {
     font-family: 'Hammersmith One', sans-serif;
     text-transform: uppercase;
     font-size: 1.1rem;
-    padding: 8px 16px 6px;
+    padding: 7px 16px 5px;
 
     border: 1px solid var(--color-primary);
     border-radius: 3px;
