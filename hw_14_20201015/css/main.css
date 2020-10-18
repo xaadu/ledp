@@ -88,6 +88,62 @@ section#story_video .container a img {
 section#story_video .container p {
   font-family: 'Roboto', sans-serif;
   font-size: 0.94rem;
+  font-weight: 700;
+}
+
+section#expertise .container .row div {
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 768px) {
+  section#expertise .container .row div {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  section#expertise .container .row div:last-child {
+    border: none;
+  }
+}
+
+section#expertise .container .row div i {
+  font-size: 3.6rem;
+  color: transparent;
+  background: -webkit-gradient(linear, left bottom, right top, from(#2efff0), to(#009489));
+  background: linear-gradient(to right top, #2efff0, #009489);
+  -webkit-background-clip: text;
+}
+
+section#expertise .container .row div h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+}
+
+section#expertise .container .row div p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-tertiary);
+  opacity: 0.9;
+}
+
+.section_heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.section_heading p {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: var(--color-text-secondary);
+}
+
+.section_heading::after {
+  background-color: var(--color-text-primary) !important;
+  opacity: 0.6;
 }
 
 .bg-black {
@@ -96,6 +152,14 @@ section#story_video .container p {
 
 .bg-primary {
   background: var(--color-primary);
+}
+
+.br {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.bb {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .sp {

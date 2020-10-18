@@ -97,13 +97,69 @@ section {
             p {
                 font-family: 'Roboto', sans-serif;
                 font-size: 0.94rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &#expertise {
+        .container {
+            .row div{
+                border-color: rgba($color: #000000, $alpha: 0.05);
+
+                @media only screen and (max-width: 768px) {
+                    border: none;
+                    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.08);
+
+                    &:last-child {
+                        border: none;
+                    }
+                }
+
+                i {
+                    font-size: 3.6rem;
+                    color: transparent;
+                    background: linear-gradient(to right top, lighten(#00e0d0, 15%), darken(#00e0d0, 15%));
+                    -webkit-background-clip: text;
+                }
+                h4 {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                    color: var(--color-text-primary);
+                }
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 0.8rem;
+                    color: var(--color-text-tertiary);
+                    opacity: 0.9;
+                }
             }
         }
     }
 }
 
 
+.section_heading {
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--color-text-primary);
+    }
 
+    p {
+        font-family: 'Playfair Display', serif;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        color: var(--color-text-secondary);
+    }
+
+    &::after {
+        background-color: var(--color-text-primary) !important;
+        opacity: 0.6;
+    }
+}
 
 .bg-black {
     background: rgba($color: #000000, $alpha: .9);
@@ -111,6 +167,10 @@ section {
 .bg-primary {
     background: var(--color-primary);
 }
+
+.br {border-right: 1px solid rgba($color: #000000, $alpha: 0.08);}
+.bb {border-bottom: 1px solid rgba($color: #000000, $alpha: 0.08);}
+
 .sp {
     position: relative;
 }
@@ -124,6 +184,7 @@ section {
     background-color: var(--color-primary);
     transform: translateX(-50%);
 }
+
 .btn {
     font-family: 'Hammersmith One', sans-serif;
     text-transform: uppercase;
