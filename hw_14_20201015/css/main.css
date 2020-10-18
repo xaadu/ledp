@@ -59,14 +59,14 @@ header .carousel .carousel-inner p {
   font-size: 0.98rem;
 }
 
-.story h2 {
+section#story h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--color-text-primary);
 }
 
-.story p {
+section#story p {
   font-size: 0.9rem;
   color: var(--color-text-primary);
 }
