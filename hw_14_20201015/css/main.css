@@ -6,6 +6,7 @@
   --color-text-primary: #413d4b;
   --color-text-secondary: #2f2d35;
   --color-text-tertiary: #333333;
+  --color-white-primary: #e6e6e6;
   --gradient-overlay-one-ltr: linear-gradient(to right, rgba(9, 5, 47, 0.8), rgba(49, 29, 94, 0.8));
 }
 
@@ -14,6 +15,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header nav {
@@ -91,17 +96,12 @@ section#story_video .container p {
   font-weight: 700;
 }
 
-section#expertise .container .row div {
-  border-color: rgba(0, 0, 0, 0.05);
-}
-
 @media only screen and (max-width: 768px) {
   section#expertise .container .row div {
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
-  section#expertise .container .row div:last-child {
-    border: none;
+  section#expertise .container .row div:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -127,23 +127,111 @@ section#expertise .container .row div p {
   opacity: 0.9;
 }
 
-.section_heading h2 {
+section#team {
+  background: var(--gradient-overlay-one-ltr), url("../images/bg_main.jpg");
+  background-size: cover;
+}
+
+section#team .card {
+  background: none;
+  border: none;
+}
+
+@media only screen and (max-width: 992px) {
+  section#team .card {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section#team .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  section#team .card {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section#team .card {
+    width: 70%;
+  }
+}
+
+section#team .card .card-image-top {
+  height: 100%;
+}
+
+section#team .card .card-body {
+  border: 1px solid rgba(230, 230, 230, 0.5);
+  border-radius: 0;
+}
+
+section#team .card .card-body h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+section#team .card .card-body p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.86rem;
+}
+
+section#team .bottom-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.section_heading_dark h2,
+.section_heading_light h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--color-text-primary);
 }
 
-.section_heading p {
+.section_heading_dark p,
+.section_heading_light p {
   font-family: 'Playfair Display', serif;
   font-size: 0.8rem;
   letter-spacing: 1px;
   color: var(--color-text-secondary);
 }
 
-.section_heading::after {
+.section_heading_dark::after,
+.section_heading_light::after {
+  height: 2px !important;
+  opacity: 0.3;
+}
+
+.section_heading_dark h2 {
+  color: var(--color-text-primary);
+}
+
+.section_heading_dark p {
+  color: var(--color-text-secondary);
+}
+
+.section_heading_dark::after {
   background-color: var(--color-text-primary) !important;
-  opacity: 0.6;
+}
+
+.section_heading_light h2 {
+  color: white;
+}
+
+.section_heading_light p {
+  color: white;
+}
+
+.section_heading_light::after {
+  background-color: white !important;
 }
 
 .bg-black {

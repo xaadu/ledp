@@ -9,6 +9,8 @@
     --color-text-primary: #413d4b;
     --color-text-secondary: #2f2d35;
     --color-text-tertiary: #333333;
+
+    --color-white-primary: #e6e6e6;
     
     --gradient-overlay-one-ltr: linear-gradient(to right, rgba(9, 5, 47, 0.8), rgba(49, 29, 94, 0.8));
 }
@@ -19,6 +21,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -105,14 +110,12 @@ section {
     &#expertise {
         .container {
             .row div{
-                border-color: rgba($color: #000000, $alpha: 0.05);
 
                 @media only screen and (max-width: 768px) {
                     border: none;
-                    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.08);
 
-                    &:last-child {
-                        border: none;
+                    &:not(:last-child) {
+                        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.08);
                     }
                 }
 
@@ -137,10 +140,59 @@ section {
             }
         }
     }
+
+    &#team {
+        background: var(--gradient-overlay-one-ltr), url('../images/bg_main.jpg');
+        background-size: cover;
+
+        .card {
+            background: none;
+            border: none;
+
+            @media only screen and (max-width: 992px) {
+                width: 80%;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            @media only screen and (max-width: 575px) {
+                width: 60%;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 70%;
+            }
+
+            .card-image-top {
+                height: 100%;
+            }
+            .card-body {
+                border: 1px solid rgba($color: #e6e6e6, $alpha: .5);
+                border-radius: 0;
+
+                h4 {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    font-size: 0.86rem;
+                }
+            }
+        }
+        .bottom-text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
+    }
 }
 
 
-.section_heading {
+.section_heading_dark,
+.section_heading_light {
     h2 {
         font-family: 'Playfair Display', serif;
         font-weight: 700;
@@ -154,10 +206,31 @@ section {
         letter-spacing: 1px;
         color: var(--color-text-secondary);
     }
-
+    &::after {
+        height: 2px !important;
+        opacity: 0.3;
+    }
+}
+.section_heading_dark {
+    h2 {
+        color: var(--color-text-primary);
+    }
+    p {
+        color: var(--color-text-secondary);
+    }
     &::after {
         background-color: var(--color-text-primary) !important;
-        opacity: 0.6;
+    }
+}
+.section_heading_light {
+    h2 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    &::after {
+        background-color: white !important;
     }
 }
 
