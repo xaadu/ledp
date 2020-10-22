@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#products {
+    .card {
+        border: none;
+        
+        .card-body {
+            p {
+                font-size: 1rem;
+            }
+            h4 {
+                font-size: 1.2rem;
+            }
+            .price {
+                .offer {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
