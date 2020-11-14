@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue-Bold.ttf");
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 860px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+header {
+  min-height: 100vh;
+  background: url("../images/bg_hero.png");
+}
+
+header .topNav .main-nav {
+  z-index: 1;
+}
+
+header .topNav .main-nav p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.86rem;
+  color: #3d2514;
+}
+
+header .topNav .main-nav a {
+  color: #3d2514;
+  font-family: 'BebasNeue', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.26rem;
+}
+
+header .bottomContent .hero__left {
+  z-index: 1;
+  padding: 8% 0;
+  color: #3d2514;
+}
+
+header .bottomContent .hero__left p {
+  font-family: 'BebasNeue', sans-serif;
+  border: 2px dashed #3d2514;
+  font-size: 1.2rem;
+}
+
+header .bottomContent .hero__left h1, header .bottomContent .hero__left h2 {
+  font-family: 'Alfa Slab One', cursive;
+  text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.8);
+}
+
+header .bottomContent .hero__left h1 {
+  font-size: 6.2rem;
+}
+
+@media only screen and (max-width: 576px) {
+  header .bottomContent .hero__left h1 {
+    font-size: 4.2rem;
+  }
+}
+
+header .bottomContent .hero__left h2 {
+  font-size: 3.4rem;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+@media only screen and (max-width: 576px) {
+  header .bottomContent .hero__left h2 {
+    font-size: 2.4rem;
+  }
+}
+
+header .bottomContent .hero__right {
+  margin-top: -120px;
+  margin-left: -90px;
+}
+
+@media only screen and (max-width: 991px) {
+  header .bottomContent .hero__right {
+    margin-left: 0;
+  }
+}
+
+header .bottomContent .hero__right img {
+  width: 116%;
+}
+
+@media only screen and (max-width: 991px) {
+  header .bottomContent .hero__right img {
+    width: 90%;
+  }
+}
+
+header .bottomContent .hero__right .burger_price {
+  bottom: 8%;
+  left: 10%;
+  background-color: #ff2929;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  header .bottomContent .hero__right .burger_price {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header .bottomContent .hero__right .burger_price {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    bottom: 3%;
+  }
+}
+
+header .bottomContent .hero__right .burger_price .box {
+  border: 2px dashed white;
+  border-radius: 50%;
+  padding: 4%;
+}
+
+header .bottomContent .hero__right .burger_price .box p {
+  color: white;
+  font-family: 'BebasNeue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+header .bottomContent .hero__right .burger_price .box p.price {
+  font-size: 3.2rem;
+}
+
+header .bottomContent .hero__right .burger_price .box p.price span {
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+}
+
+header .bottomContent .hero__right .burger_price .box p.text {
+  font-size: 1.06rem;
+  letter-spacing: 0.8rem;
+  margin-top: -25px;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+}
+/*# sourceMappingURL=main.css.map */
