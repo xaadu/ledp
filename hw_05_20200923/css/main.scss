@@ -29,7 +29,8 @@ a:hover {
 }
 
 // VARIABLES
-$color-text-main: #3d2514;
+$color-primary: #3d2514;
+$color-secondary: #ffc045;
 
 
 header {
@@ -42,10 +43,10 @@ header {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 0.86rem;
-            color: $color-text-main;
+            color: $color-primary;
         }
         a {
-            color: $color-text-main;
+            color: $color-primary;
             font-family: 'BebasNeue', sans-serif;
             font-weight: bold;
             font-size: 1.1rem;
@@ -56,11 +57,11 @@ header {
         .hero__left {
             z-index: 1;
             padding: 8% 0;
-            color: $color-text-main;
+            color: $color-primary;
 
             p {
                 font-family: 'BebasNeue', sans-serif;
-                border: 2px dashed $color-text-main;
+                border: 2px dashed $color-primary;
                 font-size: 1.2rem;
             }
 
@@ -168,5 +169,19 @@ section#features {
     .features_left .text {
         top: 11%;
         left: 10%;
+    }
+}
+
+
+
+
+// BUTTONS
+.btnt1 {
+    background: $color-secondary;
+    color: $color-primary;
+    font-family: 'BebasNeue', sans-serif;
+
+    &:hover {
+        color: $color-primary;
     }
 }

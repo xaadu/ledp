@@ -197,4 +197,14 @@ section#features .features_left .text {
   top: 11%;
   left: 10%;
 }
+
+.btnt1 {
+  background: #ffc045;
+  color: #3d2514;
+  font-family: 'BebasNeue', sans-serif;
+}
+
+.btnt1:hover {
+  color: #3d2514;
+}
 /*# sourceMappingURL=main.css.map */
