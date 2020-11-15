@@ -285,6 +285,14 @@ section#events .box img {
   list-style-type: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .slick-dots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .slick-dots li {
   margin: 0 0.25rem;
 }

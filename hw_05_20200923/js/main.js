@@ -3,7 +3,7 @@ $('.slider_left').slick({
     slidesToScroll: 1,
     arrows: false,
     infinite: true,
-    //autoplay: true,
+    autoplay: true,
     dots: true,
     autoplaySpeed: 3000,
     asNavFor: '.slider_right'

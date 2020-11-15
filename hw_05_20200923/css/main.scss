@@ -261,6 +261,10 @@ section#events {
     margin-top: 40px;
     list-style-type: none;
 
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+    }
+
     li {
         margin: 0 0.25rem;
     }
