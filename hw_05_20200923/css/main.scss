@@ -31,6 +31,7 @@ a:hover {
 // VARIABLES
 $color-primary: #3d2514;
 $color-secondary: #ffc045;
+$color-tertiary: #bf2222;
 
 
 header {
@@ -172,6 +173,19 @@ section#features {
     }
 }
 
+section#showcase {
+    p {
+        font-family: 'Montserrat', sans-serif;
+        color: $color-primary;
+        font-size: 0.8rem;
+    }
+    .card-title {
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 1.8rem;
+        color: $color-primary;
+    }
+}
+
 
 
 
@@ -184,4 +198,26 @@ section#features {
     &:hover {
         color: $color-primary;
     }
+}
+.btnt2 {
+    background: $color-tertiary;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 0.7rem;
+
+    &:hover {
+        color: white;
+    }
+}
+
+// HEADINGS
+.mainHeading {
+    font-family: 'Alfa Slab One', cursive;
+    color: $color-primary;
+    font-size: 3.2rem;
+}
+
+// URILITIES
+.u-big-11 {
+    transform: scale(1.1) translateY(-5%);
 }
