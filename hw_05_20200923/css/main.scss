@@ -186,6 +186,31 @@ section#showcase {
     }
 }
 
+section#events {
+    .box {
+        box-shadow: 5px 5px 20px 10px rgba($color-primary, .1);
+        .slide-text:focus, .slide-image:focus {
+            outline: none;
+        }
+        .slider_left {
+            .mainHeading h2 {
+                font-size: 2.3rem;
+            }
+            .subHeading h3 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 0.8rem;
+                line-height: 2;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
 
 
 
@@ -194,6 +219,7 @@ section#showcase {
     background: $color-secondary;
     color: $color-primary;
     font-family: 'BebasNeue', sans-serif;
+    font-size: 1.1rem;
 
     &:hover {
         color: $color-primary;
@@ -211,13 +237,52 @@ section#showcase {
 }
 
 // HEADINGS
-.mainHeading {
+.mainHeading h2 {
     font-family: 'Alfa Slab One', cursive;
     color: $color-primary;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
+}
+
+.subHeading h3 {
+    font-family: 'BebasNeue', sans-serif;
+    color: $color-primary;
+    font-size: 2rem;
 }
 
 // URILITIES
 .u-big-11 {
     transform: scale(1.1) translateY(-5%);
+}
+
+// SLIDER
+.slick-dots {
+    display: flex;
+    margin: 0;
+    margin-top: 40px;
+    list-style-type: none;
+
+    li {
+        margin: 0 0.25rem;
+    }
+
+    button {
+        display: block;
+        width: 0.8rem;
+        height: 0.8rem;
+        padding: 0;
+        
+        border: none;
+        border-radius: 50%;
+        background-color: lightgray;
+        
+        text-indent: -9999px;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    li.slick-active button {
+        background-color: $color-secondary;
+    }
 }
