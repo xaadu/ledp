@@ -269,6 +269,60 @@ section#reservation form input.btnt3:hover {
   color: white;
 }
 
+footer .container {
+  background: url("../images/bg_footer.png");
+  background-size: cover;
+  color: white;
+}
+
+footer .container .logo_white img {
+  width: 300px;
+}
+
+footer .container .text_details p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+footer .container .contact_details {
+  padding-bottom: 140px;
+}
+
+footer .container .contact_details i {
+  font-size: 2rem;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  width: 70px;
+}
+
+footer .container .contact_details p {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 0.94rem;
+  width: 200px;
+}
+
+footer .container .footer_credits .credit p {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 0.86rem;
+}
+
+footer .container .footer_credits .icons i {
+  background: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .container .footer_credits .icons i {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
 .btnt1 {
   background: #ffc045;
   color: #3d2514;
@@ -300,7 +354,7 @@ section#reservation form input.btnt3:hover {
 .subHeading h3 {
   font-family: 'BebasNeue', sans-serif;
   color: #3d2514;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .u-big-11 {

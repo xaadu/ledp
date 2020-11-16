@@ -244,6 +244,56 @@ section#reservation {
 }
 
 
+footer .container {
+    background: url('../images/bg_footer.png');
+    background-size: cover;
+    color: white;
+
+    .logo_white img {
+        width: 300px;
+    }
+
+    .text_details p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        line-height: 1.7;
+    }
+
+    .contact_details {
+        padding-bottom: 140px;
+
+        i {
+            font-size: 2rem;
+            transform: translateY(25%);
+            width: 70px;
+        }
+        p {
+            font-family: 'BebasNeue', sans-serif;
+            font-size: 0.94rem;
+            width: 200px;
+        }
+    }
+
+    .footer_credits {
+        .credit p {
+            font-family: 'BebasNeue', sans-serif;
+            font-size: 0.86rem;
+        }
+        .icons i {
+            background: white;
+            color: black;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 1.4rem;
+            
+            @media only screen and (min-width: 768px) {
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
 
 
 // BUTTONS
@@ -279,7 +329,7 @@ section#reservation {
 .subHeading h3 {
     font-family: 'BebasNeue', sans-serif;
     color: $color-primary;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 // URILITIES
