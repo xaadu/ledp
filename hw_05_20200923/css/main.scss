@@ -211,6 +211,38 @@ section#events {
     }
 }
 
+section#reservation {
+    background: url('../images/bg_reservation.png');
+    background-size: cover;
+
+    form {
+        padding-bottom: 80px;
+
+        input {
+            font-family: 'BebasNeue', sans-serif;
+            font-size: 1.1rem;
+            width: 360px;
+            height: 50px;
+            border: 1px solid rgba($color: #000000, $alpha: 0.3);
+            border-radius: 4px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &.btnt3 {
+                font-family: 'Alfa Slab One', cursive;
+                font-size: 1.1rem;
+                border: none;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -225,7 +257,7 @@ section#events {
         color: $color-primary;
     }
 }
-.btnt2 {
+.btnt2, .btnt3 {
     background: $color-tertiary;
     color: white;
     font-family: 'Alfa Slab One', cursive;
@@ -235,6 +267,7 @@ section#events {
         color: white;
     }
 }
+
 
 // HEADINGS
 .mainHeading h2 {

@@ -237,6 +237,38 @@ section#events .box img {
   width: 100%;
 }
 
+section#reservation {
+  background: url("../images/bg_reservation.png");
+  background-size: cover;
+}
+
+section#reservation form {
+  padding-bottom: 80px;
+}
+
+section#reservation form input {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 1.1rem;
+  width: 360px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+section#reservation form input:focus {
+  outline: none;
+}
+
+section#reservation form input.btnt3 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.1rem;
+  border: none;
+}
+
+section#reservation form input.btnt3:hover {
+  color: white;
+}
+
 .btnt1 {
   background: #ffc045;
   color: #3d2514;
@@ -248,14 +280,14 @@ section#events .box img {
   color: #3d2514;
 }
 
-.btnt2 {
+.btnt2, .btnt3 {
   background: #bf2222;
   color: white;
   font-family: 'Alfa Slab One', cursive;
   font-size: 0.7rem;
 }
 
-.btnt2:hover {
+.btnt2:hover, .btnt3:hover {
   color: white;
 }
 
