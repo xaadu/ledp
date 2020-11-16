@@ -283,6 +283,83 @@ section {
 }
 
 
+footer {
+    background: var(--gradient-overlay-one-ltr), url('../images/bg_footer.jpg');
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+    .fUpper {
+        p {
+            font-size: 0.9rem;
+            line-height: 1.75;
+        }
+        .text i {
+            font-size: 1.1rem;
+        }
+        form {
+            input {
+                background: transparent;
+                border: 1px solid rgba($color: white, $alpha: 0.3);
+                width: 214px;
+                color: white;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                background: rgba($color: white, $alpha: 0.4);
+                border: none;
+                width: 60px;
+                transform: scaleX(1.2) translate(20%);
+
+                i {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .social i {
+            font-size: 1rem;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            &:nth-child(1){
+                padding: 6px 0 0 9px;
+            }
+            &:nth-child(2){
+                padding: 6px 0 0 7px;
+            }
+            &:nth-child(3){
+                padding: 6px 0 0 6px;
+            }
+            &:nth-child(4){
+                padding: 6px 0 0 7px;
+            }
+            &:nth-child(5){
+                padding: 6px 0 0 6px;
+            }
+            &:nth-child(6){
+                padding: 6px 0 0 5px;
+            }
+        }
+    }
+
+    .fLower {
+        font-size: 0.9rem;
+        
+        ul li a {
+            color: white;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+
 .section_heading_dark,
 .section_heading_light {
     h2 {

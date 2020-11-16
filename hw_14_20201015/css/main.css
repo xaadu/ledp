@@ -273,6 +273,89 @@ section#contact .client_images .col-sm-6 {
   height: 90px;
 }
 
+footer {
+  background: var(--gradient-overlay-one-ltr), url("../images/bg_footer.jpg");
+  background-size: cover;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer .fUpper p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+footer .fUpper .text i {
+  font-size: 1.1rem;
+}
+
+footer .fUpper form input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 214px;
+  color: white;
+}
+
+footer .fUpper form input:focus {
+  outline: none;
+}
+
+footer .fUpper form button {
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  width: 60px;
+  -webkit-transform: scaleX(1.2) translate(20%);
+          transform: scaleX(1.2) translate(20%);
+}
+
+footer .fUpper form button i {
+  font-size: 1.2rem;
+}
+
+footer .fUpper .social i {
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+footer .fUpper .social i:nth-child(1) {
+  padding: 6px 0 0 9px;
+}
+
+footer .fUpper .social i:nth-child(2) {
+  padding: 6px 0 0 7px;
+}
+
+footer .fUpper .social i:nth-child(3) {
+  padding: 6px 0 0 6px;
+}
+
+footer .fUpper .social i:nth-child(4) {
+  padding: 6px 0 0 7px;
+}
+
+footer .fUpper .social i:nth-child(5) {
+  padding: 6px 0 0 6px;
+}
+
+footer .fUpper .social i:nth-child(6) {
+  padding: 6px 0 0 5px;
+}
+
+footer .fLower {
+  font-size: 0.9rem;
+}
+
+footer .fLower ul li a {
+  color: white;
+}
+
+footer .fLower ul li a:hover {
+  color: white;
+}
+
 .section_heading_dark h2,
 .section_heading_light h2 {
   font-family: 'Playfair Display', serif;
