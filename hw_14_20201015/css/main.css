@@ -251,6 +251,28 @@ section#testimonial .carousel .carousel-indicators img.active {
           transform: scale(1.3) translateY(-40%);
 }
 
+section#contact h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--color-text-primary);
+}
+
+section#contact form input, section#contact form textarea {
+  resize: none;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 3px;
+}
+
+section#contact form input:focus, section#contact form textarea:focus {
+  outline: none;
+}
+
+section#contact .client_images .col-sm-6 {
+  height: 90px;
+}
+
 .section_heading_dark h2,
 .section_heading_light h2 {
   font-family: 'Playfair Display', serif;
