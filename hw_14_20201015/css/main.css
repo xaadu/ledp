@@ -212,43 +212,83 @@ section#works .fluid-container .row div img {
 }
 
 section#testimonial {
-  background: var(--gradient-overlay-one-ltr), url("../images/bg_video.jpg");
+  background: var(--gradient-overlay-one-ltr), url("../images/bg_main.jpg");
   background-size: cover;
 }
 
-section#testimonial .carousel {
-  /*.carousel-control-prev,
-            .carousel-control-next {
-                position: absolute;
-                bottom: 5%;
-                width: 20px;
-                height: 20px;
-            }
-            .carousel-control-prev {
-                //left: 190%;
-            }
-            .carousel-control-next {
-                //right: 190%;
-            }*/
+section#testimonial .headQuote img {
+  width: 44px;
+  height: 44px;
 }
 
-section#testimonial .carousel .carousel-indicators {
-  position: relative;
+section#testimonial .slider_top .slide {
+  color: white;
 }
 
-section#testimonial .carousel .carousel-indicators img {
-  height: 60px;
-  width: 60px;
-  background: none;
-  margin: 10px;
+section#testimonial .slider_top .slide p {
+  font-family: 'Playfair Display', serif;
+  line-height: 2;
+}
+
+section#testimonial .slider_top .slide h2, section#testimonial .slider_top .slide h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+section#testimonial .slider_top .slide h2 {
+  font-size: 0.9rem;
+}
+
+section#testimonial .slider_top .slide h3 {
+  font-size: 0.86rem;
+}
+
+section#testimonial .slider_bottom {
+  max-width: 480px;
+}
+
+section#testimonial .slider_bottom .slide:focus {
+  outline: none;
+}
+
+section#testimonial .slider_bottom .slide img {
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  -webkit-transition: .4s all ease-in-out;
-  transition: .4s all ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-section#testimonial .carousel .carousel-indicators img.active {
-  -webkit-transform: scale(1.3) translateY(-40%);
-          transform: scale(1.3) translateY(-40%);
+section#testimonial .slick-prev, section#testimonial .slick-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+section#testimonial .slick-prev:focus, section#testimonial .slick-next:focus {
+  outline: none;
+}
+
+section#testimonial .slick-prev {
+  left: 0;
+}
+
+section#testimonial .slick-next {
+  right: 0;
+}
+
+section#testimonial .slick-track {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+section#testimonial .slick-current img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 section#contact h4 {
