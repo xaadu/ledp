@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;600;700&display=swap');
+
+
+
+
+@font-face {
+    font-family: 'HelveticaNue';
+    src: url("../fonts/helveticaneue/HelveticaNeue.ttf");
+}
+@font-face {
+    font-family: 'HelveticaNue';
+    src: url("../fonts/helveticaneue/HelveticaNeue\ Medium.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'HelveticaNue';
+    src: url("../fonts/BebasNeue/BebasNeue-Bold.ttf");
+    font-weight: lighter;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+// VARIABLES
+
+$color-primary: #2ecc71;
+
+$color-bg-primary: #e3e3e3;
+
+$color-text-primary: #848484;
+
+
+
+
+p {
+    font-family: 'HelveticaNue', Helvetica, Arial, sans-serif;
+    color: $color-text-primary;
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+h3 {
+    font-family: 'HelveticaNue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.icons i {
+    background: rgba($color: #000000, $alpha: 0.3);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        background: $color-primary;
+        cursor: pointer;
+    }
+
+    &:nth-child(1) {
+        padding: 9px 0 0 5px;
+    }
+    &:nth-child(2) {
+        padding: 9px 0 0 1px;
+    }
+    &:nth-child(3) {
+        padding: 9px 0 0 1px;
+    }
+    &:nth-child(4) {
+        padding: 9px 0 0 4px;
+    }
+    &:nth-child(5) {
+        padding: 9px 0 0 1px;
+    }
+    &:nth-child(6) {
+        padding: 9px 0 0 0;
+    }
+}
+
+
+body {
+    
+}
+
+header {
+    border-top: 10px solid $color-primary;
+    min-height: 90vh;
+    background: url('../images/bg_hero.jpg');
+    background-size: cover;
+    color: white;
+
+    h1 {
+        font-size: 3.4rem;
+
+        span {
+            color: $color-primary;
+        }
+    }
+    h3 {
+        font-size: 1.2rem;
+        @media only screen and (min-width: 768px) {
+            width: 40%;
+        }
+    }
+
+    .icons i {
+        &:hover {
+            color: white;
+        }
+
+        &:nth-child(1) {
+            padding: 7px 0 0 11px;
+        }
+        &:nth-child(2) {
+            padding: 9px 0 0 8px;
+        }
+        &:nth-child(3) {
+            padding: 9px 0 0 9px;
+        }
+    }
+}
+
+section#features {
+    i {
+        font-size: 2.6rem;
+        background: $color-primary;
+        color: white;
+        border-radius: 50%;
+    }
+}
+
+section#newsletter {
+    background: $color-bg-primary;
+
+    form {
+
+        input, .btn1{
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input {
+            width: 300px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: 1px solid rgba($color: $color-text-primary, $alpha: .7);
+        }
+        .btn1 {
+            margin-left: -10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 1px solid $color-primary;
+            background: $color-primary;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            transform: translateY(-1px);
+        }
+    }
+
+    iframe {
+        border-radius: 10px;
+    }
+}
+
+section#testimonial {
+    h4 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    .slider_top .slide:focus {
+        outline: none;
+    }
+
+    .slider_bottom {
+        width: 100%;
+
+        .slide {
+            position: relative;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+section#contact {
+    
+}
+
+
+footer {
+    background: $color-bg-primary;
+    ul li a {
+        color: $color-text-primary;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
