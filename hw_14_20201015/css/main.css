@@ -287,8 +287,8 @@ section#testimonial .slick-track {
 }
 
 section#testimonial .slick-current img {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
 }
 
 section#contact h4 {
