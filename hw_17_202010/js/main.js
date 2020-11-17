@@ -10,6 +10,7 @@ $('.slider_top').slick({
 $('.slider_bottom').slick({
       slidesToShow: 5,
       slidesToScroll: 1,
+      initialSlide: 3,
       asNavFor: '.slider_top',
       centerMode: true,
       variableWidth: true,
