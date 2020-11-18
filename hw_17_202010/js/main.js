@@ -8,22 +8,23 @@ $('.heroCarousel .slider').slick({
       autoplaySpeed: 3000
 });
 
-$('.slider_top').slick({
+$('.slider_left').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
+      initialSlide: 1,
       arrows: false,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 3000,
-      asNavFor: '.slider_bottom'
+      autoplaySpeed: 5000,
+      asNavFor: '.slider_right'
 });
-$('.slider_bottom').slick({
-      slidesToShow: 5,
+$('.slider_right').slick({
+      slidesToShow: 1,
       slidesToScroll: 1,
-      initialSlide: 3,
-      asNavFor: '.slider_top',
+      initialSlide: 1,
+      asNavFor: '.slider_left',
       centerMode: true,
       variableWidth: true,
       arrows: false,
-      dots: false
+      dots: true
 });
