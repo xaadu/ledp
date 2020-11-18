@@ -30,6 +30,7 @@ h2 {
 h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  font-size: 1.25rem;
 }
 
 h4 {
@@ -103,7 +104,8 @@ header .heroCarousel .slider .slide.slide-3 {
   background-size: cover;
 }
 
-section#startup i {
+section#startup i,
+section#features i {
   font-size: 1.9rem;
   background-color: #e5eef0;
   height: 60px;
@@ -114,7 +116,8 @@ section#startup i {
   cursor: pointer;
 }
 
-section#startup i:hover {
+section#startup i:hover,
+section#features i:hover {
   background-color: #f7941d;
   color: white;
 }
@@ -169,6 +172,61 @@ section#testimonial .slick-dots button {
 section#testimonial .slick-dots li.slick-active button {
   background: #29c2e1;
   border: 2px solid #29c2e1;
+}
+
+section#features .container {
+  border-bottom: 1px solid #e5eef0;
+  position: relative;
+}
+
+section#features .container::before, section#features .container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
+          clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+section#features .container::before {
+  right: 0;
+  background: #f7941d;
+  height: 6.875rem;
+  width: 8.5rem;
+}
+
+section#features .container::after {
+  right: 6.625rem;
+  background: #29c2e1;
+  height: 5rem;
+  width: 6.625rem;
+}
+
+section#features .container .col-md-4 i {
+  text-align: center;
+}
+
+section#features .container .col-md-4:nth-child(1) i {
+  padding: 16px 14px;
+}
+
+section#features .container .col-md-4:nth-child(2) i {
+  padding: 15px 10px;
+}
+
+section#features .container .col-md-4:nth-child(3) i {
+  padding: 15px 12px;
+}
+
+section#features .container .col-md-4:nth-child(4) i {
+  padding: 16px 12px;
+}
+
+section#features .container .col-md-4:nth-child(5) i {
+  padding: 17px 12px;
+}
+
+section#features .container .col-md-4:nth-child(6) i {
+  padding: 16px 14px;
 }
 
 .button {
