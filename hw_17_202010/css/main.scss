@@ -92,12 +92,16 @@ header {
             font-family: 'Raleway', sans-serif;
         }
 
-        &:nth-child(even) {
+        &.slide-1 {
+            background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/bg_hero_1.jpg');
+            background-size: cover;
+        }
+        &.slide-2 {
             background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/bg_hero_2.jpg');
             background-size: cover;
         }
-        &:nth-child(odd) {
-            background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/bg_hero_1.jpg');
+        &.slide-3 {
+            background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/bg_hero_3.jpg');
             background-size: cover;
         }
     }
