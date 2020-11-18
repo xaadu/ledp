@@ -92,16 +92,12 @@ header {
             font-family: 'Raleway', sans-serif;
         }
 
-        &:nth-child(1) {
+        &:nth-child(even) {
             background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/bg_hero_2.jpg');
             background-size: cover;
         }
-        &:nth-child(2) {
+        &:nth-child(odd) {
             background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/bg_hero_1.jpg');
-            background-size: cover;
-        }
-        &:nth-child(3) {
-            background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/bg_hero_2.jpg');
             background-size: cover;
         }
     }
