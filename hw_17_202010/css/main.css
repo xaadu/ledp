@@ -9,7 +9,12 @@
 p {
   font-family: 'Open Sans', sans-serif;
   color: #55595f;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
+  line-height: 1.8;
+}
+
+h2, h3, h4 {
+  color: #23282f;
 }
 
 h1 {
@@ -123,12 +128,45 @@ header .slick-dots li.slick-active button {
   border: 2px solid white;
 }
 
+section#startup i {
+  font-size: 1.9rem;
+  background-color: #e5eef0;
+  height: 60px;
+  width: 56px;
+  padding: 14px 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section#startup i:hover {
+  background-color: #f7941d;
+  color: white;
+}
+
 .button {
   font-size: 0.92rem;
   color: white;
   background: #29c2e1;
+  border: 2px solid #29c2e1;
   border-radius: 20px;
   padding-left: 2rem;
   padding-right: 2rem;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  background: white;
+  color: #29c2e1;
+}
+
+.sectionHeading h2 {
+  font-size: 1.875rem;
+}
+
+.sectionHeading h4 {
+  font-size: 1.125rem;
 }
 /*# sourceMappingURL=main.css.map */
