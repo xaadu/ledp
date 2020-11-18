@@ -9,6 +9,7 @@
 p {
   font-family: 'Open Sans', sans-serif;
   color: #55595f;
+  font-size: 0.9rem;
 }
 
 h1 {
@@ -28,5 +29,106 @@ h3 {
 
 h4 {
   font-family: 'Karla', sans-serif;
+}
+
+header .topInfoBar {
+  background: #e5eef0;
+  color: #93a1a7;
+}
+
+header .topInfoBar h4 {
+  font-size: 0.8125rem;
+}
+
+header .topInfoBar h4.br {
+  border-right: 2px solid #d8e3e6;
+}
+
+header .topInfoBar h4 i {
+  font-size: 1.1rem;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+header .topNavBar a {
+  font-family: 'Karla', sans-serif;
+  color: #93a1a7;
+  font-size: 0.91rem;
+}
+
+header .topNavBar a.active {
+  color: #23282f;
+}
+
+header .heroCarousel .slider .slide {
+  min-height: 100vh;
+}
+
+header .heroCarousel .slider .slide h1, header .heroCarousel .slider .slide p {
+  color: white;
+}
+
+header .heroCarousel .slider .slide h1 {
+  font-size: 3.6rem;
+}
+
+header .heroCarousel .slider .slide p {
+  font-family: 'Raleway', sans-serif;
+}
+
+header .heroCarousel .slider .slide:nth-child(even) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/bg_hero_2.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg_hero_2.jpg");
+  background-size: cover;
+}
+
+header .heroCarousel .slider .slide:nth-child(odd) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/bg_hero_1.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg_hero_1.jpg");
+  background-size: cover;
+}
+
+header .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header .slick-dots li {
+  margin: 0 0.25rem;
+}
+
+header .slick-dots button {
+  background: transparent;
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+
+header .slick-dots button:focus {
+  outline: none;
+}
+
+header .slick-dots li.slick-active button {
+  border: 2px solid white;
+}
+
+.button {
+  font-size: 0.92rem;
+  color: white;
+  background: #29c2e1;
+  border-radius: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
