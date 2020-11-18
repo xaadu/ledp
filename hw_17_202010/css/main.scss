@@ -93,6 +93,10 @@ header {
             font-family: 'Raleway', sans-serif;
         }
 
+        &:focus {
+            outline: none;
+        }
+
         &.slide-1 {
             background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/bg_hero_1.jpg');
             background-size: cover;
