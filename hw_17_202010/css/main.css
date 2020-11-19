@@ -235,6 +235,11 @@ section#pricing .card {
           box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
 
+section#pricing .card:hover {
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+
 section#pricing .card .planName {
   border-bottom: 1px solid #e6edee;
 }
@@ -288,6 +293,13 @@ section#team {
 
 section#team .card {
   border: none;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+section#team .card:hover {
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 section#team .card img {
