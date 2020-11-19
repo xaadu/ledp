@@ -200,31 +200,31 @@ section#features .container::after {
   width: 6.625rem;
 }
 
-section#features .container .col-md-4 i {
+section#features .container .col-md-6 i {
   text-align: center;
 }
 
-section#features .container .col-md-4:nth-child(1) i {
+section#features .container .col-md-6:nth-child(1) i {
   padding: 16px 14px;
 }
 
-section#features .container .col-md-4:nth-child(2) i {
+section#features .container .col-md-6:nth-child(2) i {
   padding: 15px 10px;
 }
 
-section#features .container .col-md-4:nth-child(3) i {
+section#features .container .col-md-6:nth-child(3) i {
   padding: 15px 12px;
 }
 
-section#features .container .col-md-4:nth-child(4) i {
+section#features .container .col-md-6:nth-child(4) i {
   padding: 16px 12px;
 }
 
-section#features .container .col-md-4:nth-child(5) i {
+section#features .container .col-md-6:nth-child(5) i {
   padding: 17px 12px;
 }
 
-section#features .container .col-md-4:nth-child(6) i {
+section#features .container .col-md-6:nth-child(6) i {
   padding: 16px 14px;
 }
 
