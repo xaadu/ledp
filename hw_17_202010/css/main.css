@@ -282,6 +282,30 @@ section#pricing .card .business h4 {
   color: white;
 }
 
+section#team {
+  background: #e5eef0;
+}
+
+section#team .card {
+  border: none;
+}
+
+section#team .card img {
+  border-radius: 0;
+}
+
+section#team .card .card-body h4, section#team .card .card-body i {
+  font-size: 0.9rem;
+}
+
+section#team .card .card-body .designation {
+  color: #f7941d;
+}
+
+section#team .card .card-body i {
+  color: #adbdc1;
+}
+
 .button {
   font-size: 0.86rem;
   color: white;
@@ -298,6 +322,10 @@ section#pricing .card .business h4 {
 .button:hover {
   background: white;
   color: #29c2e1;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .sectionHeading h2 {

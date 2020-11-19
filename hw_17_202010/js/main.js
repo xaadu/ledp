@@ -15,7 +15,7 @@ $('.slider_left').slick({
       arrows: false,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 2000,
       asNavFor: '.slider_right'
 });
 $('.slider_right').slick({

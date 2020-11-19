@@ -23,6 +23,7 @@ $color-quinary: #e6edee;
 $color-text-primary: #55595f;
 $color-text-secondary: #93a1a7;
 $color-text-tertiary: #23282f;
+$color-text-quaternary: #adbdc1;
 
 
 
@@ -294,6 +295,33 @@ section#pricing .card  {
 }
 
 
+section#team {
+    background: $color-primary-light;
+
+    .card {
+        border: none;
+
+        img {
+            border-radius: 0;
+        }
+
+        .card-body {
+            h4, i {
+                font-size: 0.9rem;
+            }
+            .designation {
+                color: $color-secondary;
+            }
+            i {
+                color: $color-text-quaternary;
+            }
+        }
+
+    }
+}
+
+
+
 
 
 // COMPONENTS
@@ -311,6 +339,9 @@ section#pricing .card  {
     &:hover {
         background: white;
         color: $color-primary;
+    }
+    &:focus {
+        outline: none;
     }
 }
 
