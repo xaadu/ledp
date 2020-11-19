@@ -18,6 +18,7 @@ $color-primary-light: #e5eef0;
 $color-secondary: #f7941d;
 $color-tertiary: #d8e3e6;
 $color-quaternary: #b3cacf;
+$color-quinary: #e6edee;
 
 $color-text-primary: #55595f;
 $color-text-secondary: #93a1a7;
@@ -187,7 +188,6 @@ section#testimonial {
 section#features {
     .container {
         border-bottom: 1px solid $color-primary-light;
-        position: relative;
 
         &::before,
         &::after {
@@ -240,12 +240,65 @@ section#features {
 }
 
 
+section#pricing .card  {
+    border: 1px solid $color-quinary;
+    //border: 1px solid black; // TEST BORDER
+    border-radius: 0;
+    box-shadow: 0 0 30px 0 rgba($color: #000000, $alpha: 0.1);
+
+    .planName {
+        border-bottom: 1px solid $color-quinary;
+        h4 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+
+            &:after {
+                content: "";
+                width: 3rem;
+                height: 1px;
+
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+
+                background: $color-secondary;
+            }
+        }
+    }
+    .price {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        border-bottom: 1px solid $color-quinary;
+        span {
+            color: $color-secondary;
+        }
+    }
+
+
+    .business{
+        position: absolute;
+        top: 1.47rem;
+        left: -1.86rem;
+        background: $color-secondary;
+        padding: 6px 30px;
+        clip-path: polygon(19.8% 0, 80.2% 0, 100% 100%, 0 100%);
+        transform: rotate(-45deg);
+        z-index: 1;
+
+
+        h4 {
+            font-size: 0.75rem;
+            color: white;
+        }
+    }
+}
+
 
 
 
 // COMPONENTS
 .button {
-    font-size: 0.92rem;
+    font-size: 0.86rem;
     color: white;
     background: $color-primary;
     border: 2px solid $color-primary;

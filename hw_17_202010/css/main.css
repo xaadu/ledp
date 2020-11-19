@@ -176,7 +176,6 @@ section#testimonial .slick-dots li.slick-active button {
 
 section#features .container {
   border-bottom: 1px solid #e5eef0;
-  position: relative;
 }
 
 section#features .container::before, section#features .container::after {
@@ -229,8 +228,62 @@ section#features .container .col-md-4:nth-child(6) i {
   padding: 16px 14px;
 }
 
+section#pricing .card {
+  border: 1px solid #e6edee;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+section#pricing .card .planName {
+  border-bottom: 1px solid #e6edee;
+}
+
+section#pricing .card .planName h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+section#pricing .card .planName h4:after {
+  content: "";
+  width: 3rem;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background: #f7941d;
+}
+
+section#pricing .card .price {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid #e6edee;
+}
+
+section#pricing .card .price span {
+  color: #f7941d;
+}
+
+section#pricing .card .business {
+  position: absolute;
+  top: 1.47rem;
+  left: -1.86rem;
+  background: #f7941d;
+  padding: 6px 30px;
+  -webkit-clip-path: polygon(19.8% 0, 80.2% 0, 100% 100%, 0 100%);
+          clip-path: polygon(19.8% 0, 80.2% 0, 100% 100%, 0 100%);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 1;
+}
+
+section#pricing .card .business h4 {
+  font-size: 0.75rem;
+  color: white;
+}
+
 .button {
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   color: white;
   background: #29c2e1;
   border: 2px solid #29c2e1;
