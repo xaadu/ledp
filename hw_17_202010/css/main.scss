@@ -347,6 +347,61 @@ section#trial .container {
 }
 
 
+footer .fluid-container {
+    h3 {
+        color: $color-text-tertiary;
+        font-size: 1.125rem;
+    }
+    h4 {
+        font-size: 0.875rem;
+        color: $color-text-secondary;
+
+        span {
+            color: $color-text-tertiary;
+        }
+    }
+    input {
+        font-family: 'Karla', sans-serif;
+        font-size: 0.875rem;
+        border: 1px solid $color-primary-light;
+        color: $color-text-secondary;
+        &:focus {
+            outline: none;
+        }
+    }
+    button {
+        border-radius: 0;
+        padding: 8px 9px 9px;
+        margin-left: -5px;
+        color: white;
+        transform: translateY(1px);
+    }
+
+    &.footer_top .container {
+        border-bottom: 1px solid $color-primary-light;
+    }
+
+    &.footer_top::after,
+    &.footer_bottom::after {
+        content: "";
+        width: 20%;
+        height: 21.5rem;
+        position: absolute;
+        bottom: 0;
+    }
+    &.footer_top::after {
+        left: 0;
+        background: $color-secondary;
+        clip-path: polygon(0 0, 100% 100%, 0 100%);
+    }
+    &.footer_bottom::after {
+        right: 0;
+        background: $color-primary;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
 
 
 

@@ -332,6 +332,66 @@ section#trial .container button.button:nth-child(2):hover {
   background: white;
 }
 
+footer .fluid-container h3 {
+  color: #23282f;
+  font-size: 1.125rem;
+}
+
+footer .fluid-container h4 {
+  font-size: 0.875rem;
+  color: #93a1a7;
+}
+
+footer .fluid-container h4 span {
+  color: #23282f;
+}
+
+footer .fluid-container input {
+  font-family: 'Karla', sans-serif;
+  font-size: 0.875rem;
+  border: 1px solid #e5eef0;
+  color: #93a1a7;
+}
+
+footer .fluid-container input:focus {
+  outline: none;
+}
+
+footer .fluid-container button {
+  border-radius: 0;
+  padding: 8px 9px 9px;
+  margin-left: -5px;
+  color: white;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+footer .fluid-container.footer_top .container {
+  border-bottom: 1px solid #e5eef0;
+}
+
+footer .fluid-container.footer_top::after, footer .fluid-container.footer_bottom::after {
+  content: "";
+  width: 20%;
+  height: 21.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .fluid-container.footer_top::after {
+  left: 0;
+  background: #f7941d;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+footer .fluid-container.footer_bottom::after {
+  right: 0;
+  background: #29c2e1;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
 .button {
   font-size: 0.86rem;
   color: white;
