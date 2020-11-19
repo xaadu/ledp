@@ -306,11 +306,37 @@ section#team .card .card-body i {
   color: #adbdc1;
 }
 
+section#trial .container {
+  border-bottom: 1px solid #e5eef0;
+}
+
+section#trial .container h3 {
+  font-size: 1.875rem;
+}
+
+section#trial .container h3 span {
+  color: #f7941d;
+}
+
+section#trial .container h5 {
+  font-size: 0.8rem;
+}
+
+section#trial .container button.button:nth-child(2) {
+  background: #f7941d;
+  border-color: #f7941d;
+}
+
+section#trial .container button.button:nth-child(2):hover {
+  color: #f7941d;
+  background: white;
+}
+
 .button {
   font-size: 0.86rem;
   color: white;
   background: #29c2e1;
-  border: 2px solid #29c2e1;
+  border: 1px solid #29c2e1;
   border-radius: 20px;
   padding-left: 2rem;
   padding-right: 2rem;

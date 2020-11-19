@@ -321,6 +321,33 @@ section#team {
 }
 
 
+section#trial .container {
+    border-bottom: 1px solid $color-primary-light;
+
+    h3 {
+        font-size: 1.875rem;
+
+        span {
+            color: $color-secondary;
+        }
+    }
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    button.button:nth-child(2) {
+        background: $color-secondary;
+        border-color: $color-secondary;
+
+        &:hover {
+            color: $color-secondary;
+            background: white;
+        }
+    }
+}
+
+
+
 
 
 
@@ -329,7 +356,7 @@ section#team {
     font-size: 0.86rem;
     color: white;
     background: $color-primary;
-    border: 2px solid $color-primary;
+    border: 1px solid $color-primary;
     border-radius: 20px;
     padding-left: 2rem;
     padding-right: 2rem;
