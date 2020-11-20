@@ -103,6 +103,58 @@ section#services .card:hover h2:after {
   background: white;
 }
 
+section#portfolio {
+  background: #f4f4f4;
+}
+
+section#portfolio .col-sm-6 .image {
+  padding: 0.6rem;
+}
+
+section#portfolio .col-sm-6 .overlay {
+  top: 0.6rem;
+  left: 0.6rem;
+  height: calc(100% - 1.2rem);
+  width: calc(100% - 1.2rem);
+  padding: 0.6rem;
+  background: #1769ff;
+  color: white;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+section#portfolio .col-sm-6 .overlay h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+section#portfolio .col-sm-6 .overlay h2 {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+section#portfolio .col-sm-6 .overlay h2:after {
+  content: "";
+  height: 2px;
+  width: 46px;
+  background: white;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-54%);
+          transform: translateX(-54%);
+}
+
+section#portfolio .col-sm-6:hover .overlay, section#portfolio .col-sm-6:hover img {
+  opacity: 1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 56px), calc(100% - 56px) 100%, 0 100%, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 56px), calc(100% - 56px) 100%, 0 100%, 0 0);
+}
+
 .button {
   font-size: 0.9rem;
   border-radius: 20px;

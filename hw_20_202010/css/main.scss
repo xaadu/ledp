@@ -125,6 +125,58 @@ section#services  {
 }
 
 
+section#portfolio {
+    background: $color-bg-secondary;
+
+    .col-sm-6 {
+        .image {
+            padding: 0.6rem;
+        }
+    
+        .overlay {
+            top: 0.6rem;
+            left: 0.6rem;
+            height: calc(100% - 1.2rem);
+            width: calc(100% - 1.2rem);
+    
+            padding: 0.6rem;
+            background: $color-primary;
+            color: white;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+    
+            h4 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
+    
+            h2 {
+                position: relative;
+                font-size: 1.3rem;
+                font-weight: 600;
+    
+                &:after {
+                    content: "";
+                    height: 2px;
+                    width: 46px;
+                    background: white;
+                    opacity: 0.8;
+        
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-54%);
+                }
+            }
+        }
+        &:hover .overlay, &:hover img {
+            opacity: 1;
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 56px), calc(100% - 56px) 100%, 0 100%, 0 0);  
+        }
+    }
+}
+
 
 
 
