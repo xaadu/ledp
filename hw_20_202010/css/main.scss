@@ -12,7 +12,7 @@
 
 // VARIABLES
 $color-primary: #1769ff;
-$color-text-secondary: #32ccfe;
+$color-secondary: #32ccfe;
 
 
 $color-text-primary: #777777;
@@ -22,36 +22,102 @@ $color-text-shadow: #eeeeee;
 
 
 
+p {
+    font-family: 'Raleway', sans-serif;
+    color: $color-text-primary;
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+
+
+header {
+    background: url('../images/bg_hero.jpg');
+    background-size: cover;
+
+    .container {
+        min-height: 100vh;
+        
+        nav {
+            img {
+                width: 80%;
+            }
+        
+            button.button {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+            }
+        
+            a.nav-link {
+                font-family: 'Poppins', sans-serif;
+                color: $color-text-secondary!important;
+            }
+        }
+
+        .row {
+            h4 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            h2 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2.4rem;
+            }
+            button.button {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                padding: 0.58rem 2rem 0.5rem;
+                box-shadow: 2px 2px 8px rgba($color: $color-primary, $alpha: 0.5);
+            }
+        }
+    }
+}
+
+
+
+
 
 
 // COMPONENTS
 .button {
-    font-size: 0.86rem;
-    color: white;
-    background: $color-primary;
-    border: 1px solid $color-primary;
+    font-size: 0.9rem;
     border-radius: 20px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+
+    padding: 0.48rem 2rem 0.4rem;
+
     cursor: pointer;
     transition: all .2s ease-in-out;
 
-    &:hover {
-        background: white;
-        color: $color-primary;
-    }
     &:focus {
         outline: none;
     }
+
+    &_outline {
+        color: $color-primary;
+        background: transparent;
+        border: 2px solid $color-primary;
+
+        &:hover {
+            color: white;
+            background: $color-primary;
+        }
+    }
+    &_fill {
+        color: white;
+        background: $color-primary;
+        border: 2px solid $color-primary;
+
+        &:hover {
+            color: $color-primary;
+            background: transparent;
+        }
+    }
 }
 
+
 .sectionHeading {
-    h2 {
-        font-size: 1.875rem;
-    }
-    h4 {
-        font-size: 1.125rem;
-    }
+    
 }
 
 
