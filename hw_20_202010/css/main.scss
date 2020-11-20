@@ -14,6 +14,9 @@
 $color-primary: #1769ff;
 $color-secondary: #32ccfe;
 
+$color-bg-primary: #fafafa;
+$color-bg-secondary: #f4f4f4;
+
 
 $color-text-primary: #777777;
 $color-text-secondary: #333333;
@@ -27,6 +30,10 @@ p {
     color: $color-text-primary;
     font-size: 0.8rem;
     line-height: 1.8;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -61,19 +68,61 @@ header {
                 font-size: 2rem;
             }
             h2 {
-                font-family: 'Poppins', sans-serif;
                 font-size: 2.4rem;
             }
             button.button {
                 font-family: 'Poppins', sans-serif;
                 font-weight: 600;
                 padding: 0.58rem 2rem 0.5rem;
-                box-shadow: 2px 2px 8px rgba($color: $color-primary, $alpha: 0.5);
             }
         }
     }
 }
 
+
+section#services  {
+    background: $color-bg-primary;
+
+    .card {
+        border: none;
+        transition: all .2s ease-in-out;
+        background: none;
+
+        i {
+            font-size: 3rem;
+            color: $color-primary;
+            text-shadow: 4px 4px 6px rgba($color: $color-primary, $alpha: 0.3);
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 1.3rem;
+
+            &:after {
+                content: "";
+                height: 2px;
+                width: 46px;
+                background: $color-primary;
+                opacity: 0.9;
+
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-54%);
+            }
+        }
+
+        &:hover {
+            background: $color-primary;
+
+            i, h2, p {
+                color: white;
+            }
+            h2:after {
+                background: white;
+            }
+        }
+    }
+}
 
 
 
@@ -85,6 +134,8 @@ header {
     border-radius: 20px;
 
     padding: 0.48rem 2rem 0.4rem;
+
+    box-shadow: 3px 3px 8px rgba($color: $color-primary, $alpha: 0.3);
 
     cursor: pointer;
     transition: all .2s ease-in-out;
@@ -116,8 +167,19 @@ header {
 }
 
 
-.sectionHeading {
-    
+.sectionHeading h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+
+    span {
+        letter-spacing: normal;
+        font-size: 3.2rem;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -23%);
+        opacity: 0.1;
+        pointer-events: none;
+    }
 }
 
 
