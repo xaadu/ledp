@@ -16,6 +16,7 @@ $color-secondary: #32ccfe;
 
 $color-bg-primary: #fafafa;
 $color-bg-secondary: #f4f4f4;
+$color-bg-tertiary: #ebebeb;
 
 
 $color-text-primary: #777777;
@@ -231,6 +232,61 @@ section#testimonial {
         }
     }
 }
+
+
+
+footer {
+    .footerNav {
+        a {
+            color: $color-text-tertiary;
+            font-family: 'Poppins', sans-serif;
+        }
+        form {
+            font-family: 'Poppins', sans-serif;
+            transform: translateY(-10%);
+
+            input {
+                border-radius: 30px;
+                border: 1px solid rgba($color-text-primary, .4);
+                padding: 6px 24px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                border: 0;
+                background: none;
+                top: 34%;
+                right: 12%;
+            }
+        }
+    }
+    .social {
+        a {
+            color: $color-text-primary;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: $color-bg-tertiary;
+            padding-top: 8px;
+            transition: all .3s ;
+
+            &:hover {
+                background: $color-secondary;
+                color: white;
+                transform: translateY(-5%);
+                box-shadow: 0 4px 6px rgba($color: #000000, $alpha: .4);
+            }
+        }
+    }
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9rem;
+    }
+}
+
+
 
 
 
