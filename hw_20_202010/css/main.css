@@ -155,6 +155,16 @@ section#portfolio .col-sm-6:hover .overlay, section#portfolio .col-sm-6:hover im
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 56px), calc(100% - 56px) 100%, 0 100%, 0 0);
 }
 
+section#hireMe {
+  background: #fafafa;
+}
+
+section#hireMe button.button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0.58rem 1.4rem 0.5rem;
+}
+
 .button {
   font-size: 0.9rem;
   border-radius: 20px;
