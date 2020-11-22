@@ -5,7 +5,11 @@ $('.heroCarousel .slider').slick({
       dots: true,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 3000
+      autoplaySpeed: 3000,
+      customPaging: function(slider, i) {
+            var imgURL = $(slider.$slides[i]).css('background').slice(140, -53);
+            return '<button class="tab position-relative"><div class="position-absolute"><img class="postition-relative" src="' + imgURL + '"></div></button>';
+      }
 });
 
 $('.slider_left').slick({

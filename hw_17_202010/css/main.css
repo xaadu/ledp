@@ -104,6 +104,56 @@ header .heroCarousel .slider .slide.slide-3 {
   background-size: cover;
 }
 
+header .slick-dots button {
+  text-indent: 0;
+}
+
+header .slick-dots button div {
+  top: 0;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -130%);
+          transform: translate(-50%, -130%);
+  border: 0.2rem solid white;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity .8s ease-in-out;
+  transition: visibility 0s, opacity .8s ease-in-out;
+}
+
+header .slick-dots button div img {
+  height: 100%;
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
+header .slick-dots button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.46rem;
+  width: 0.4rem;
+  background: white;
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+  -webkit-transform: translate(25%, -250%);
+          transform: translate(25%, -250%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity .8s ease-in-out;
+  transition: visibility 0s, opacity .8s ease-in-out;
+}
+
+header .slick-dots li.slick-active button div,
+header .slick-dots li.slick-active button:after {
+  visibility: visible;
+  opacity: 1;
+}
+
 section#startup i,
 section#features i {
   font-size: 1.9rem;
